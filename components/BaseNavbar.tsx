@@ -1,18 +1,29 @@
+import { MenuAlt1Icon, SearchIcon } from '@heroicons/react/outline';
+
 const BaseNavbar = () => {
   return (
-    <nav className="bg-white w-96 flex flex-col gap-4 shadow-2xl">
-      <div className="flex justify-between">
-        <button className="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-6 rounded inline-flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-          </svg>
-        </button>
-        <span className="my-6 text-lg leading-7 font-bold">Alfastore</span>
-        <button className="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-6 rounded inline-flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        </button>
+    <nav className="fixed w-full flex flex-col bg-white border-b border-gray-100 shadow-sm gap-4">
+      <div className="flex p-4 justify-between items-center">
+        {/* left nav */}
+        <div className="flex p-1">
+          <button className="">
+            <MenuAlt1Icon className="w-6 h-6 text-gray-900" />
+          </button>
+        </div>
+
+        {/* brand */}
+        <div>
+          <div className="px-2 py-1">
+            <span className="font-bold text-lg text-gray-900 leading-7">Alfastore</span>
+          </div>
+        </div>
+
+        {/* right nav */}
+        <div className="flex p-1">
+          <button className="">
+            <SearchIcon className="w-6 h-6 text-gray-500" />
+          </button>
+        </div>
       </div>
     </nav>
   )

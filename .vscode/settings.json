@@ -13,6 +13,7 @@
     "typescriptreact": "javascript"
   },
   "conventionalCommits.scopes": [
-    "package"
+    "package",
+    "page"
   ],
 }

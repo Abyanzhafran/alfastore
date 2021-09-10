@@ -1,11 +1,13 @@
 const BaseFooter = () => {
   return (
     <footer>
-      <div className="bg-gray-900 w-96 flex items-center justify-center">
-        <span className="font-bold text-xl text-white">Alfastore</span>
+      <div className="flex w-full bg-gray-900 items-center justify-center">
+        <div className="px-2 py-1">
+          <span className="font-bold text-lg text-white leading-7">Alfastore</span>
+        </div>
       </div>
     </footer>
   )
 }
 
-export default BaseFooter
+export default BaseFooter;

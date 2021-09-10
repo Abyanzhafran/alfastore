@@ -1,11 +1,12 @@
-import BaseNavbar from './BaseNavbar'
-import BaseFooter from './BaseFooter'
+import BaseNavbar from './BaseNavbar';
+import BaseFooter from './BaseFooter';
+import type { HTMLAttributes } from 'react';
 
-const MainLayout = ({ children, className }) => {
+const MainLayout = ({ children, ...props }: HTMLAttributes<HTMLElement>) => {
   return (
     <>
       <BaseNavbar />
-      <main className={`${className}`}>
+      <main {...props}>
         {children}
       </main>
       <BaseFooter />
