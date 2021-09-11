@@ -7,7 +7,7 @@ const BaseNavbar = () => {
   // const [isClose, setClose] = useState(false)
 
   return (
-    <nav className="fixed w-full flex flex-col bg-white border-b-4 border-gray-100 shadow-sm gap-4">
+    <nav className="fixed w-full flex flex-col bg-white border-b-4 border-gray-100 shadow-sm gap-4 z-10">
       <div className="flex flex-col">
         <div className="flex p-4 justify-between items-center md:hidden">
           {/* left nav */}
