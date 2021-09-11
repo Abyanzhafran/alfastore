@@ -10,17 +10,14 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: resolve(__dirname, './tsconfig.json'),
-    tsconfigRootDir: __dirname,
   },
   plugins: [
-    'react',
     '@typescript-eslint',
   ],
   extends: [
-    'plugin:react/recommended',
-    'next/core-web-vitals',
     'airbnb',
-    'airbnb-typescript'
+    'airbnb-typescript',
+    'plugin:@next/next/recommended',
   ],
   globals: {
     React: true,
@@ -46,4 +43,4 @@ module.exports = {
     'no-underscore-dangle': 'off',
     'func-names': 'off',
   },
-}
+};
