@@ -19,28 +19,18 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "pages/*": [
-        "pages/*"
-      ],
-      "components/*": [
-        "components/*"
-      ],
-      "styles/*": [
-        "styles/*"
-      ],
-      "hooks/*": [
-        "hooks/*"
-      ],
-      "app/*": [
-        "app/*"
-      ],
-      "@/*": [
-        "*"
-      ],
+      "pages/*": ["pages/*"],
+      "components/*": ["components/*"],
+      "styles/*": ["styles/*"],
+      "hooks/*": ["hooks/*"],
+      "app/*": ["app/*"],
+      "@/*": ["*"],
     }
   },
   "include": [
     "next-env.d.ts",
+    ".eslintrc.js",
+    "*.js",
     "**/*.ts",
     "**/*.tsx"
   ],
