@@ -2,10 +2,13 @@ import { MdiFacebook, MdiInstagram, MdiWhatsapp } from 'components/icons';
 
 const BaseFooter = () => (
   <footer>
-    <div className="flex w-full bg-gray-900 items-center justify-center">
+    <div className="absolute flex w-full bg-gray-900 items-center justify-center">
       {/* At < md breakpoint */}
       <div className="flex flex-col w-80 mx-4 my-8 justify-start gap-10 lg:hidden">
-        <span className="font-bold text-lg text-white leading-7 border-b-2">Alfastore</span>
+        <span className="font-bold text-lg text-white leading-7">
+          Alfastore
+          <hr className="text-white border-1 w-20" />
+        </span>
 
         <div className="flex flex-col">
           <span className="text-white text-xs leading-4 font-bold mt-6 mb-4">Navigasi</span>
@@ -54,7 +57,7 @@ const BaseFooter = () => (
 
           <span className="text-white text-base leading-6 font-semibold mt-4 mb-6">Jl . jalan, No. 45, Kartasura, Jawa Selatan</span>
 
-          <hr className="text-white mb-2 h-px" />
+          <hr className="text-white mb-2 border-1" />
 
           <span className="text-white text-xs leading-4 font-normal">© 2021 Alfastore (CV. Alfa Cipta Mukti). All rights reserved.</span>
         </div>
