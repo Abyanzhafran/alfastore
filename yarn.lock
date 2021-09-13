@@ -2824,6 +2824,11 @@ parse-json@^5.0.0:
     json-parse-even-better-errors "^2.3.0"
     lines-and-columns "^1.1.6"
 
+parse-unit@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/parse-unit/-/parse-unit-1.0.1.tgz#7e1bb6d5bef3874c28e392526a2541170291eecf"
+  integrity sha1-fhu21b7zh0wo45JSaiVBFwKR7s8=
+
 path-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/path-browserify/-/path-browserify-0.0.1.tgz#e6c4ddd7ed3aa27c68a20cc4e50e1a4ee83bbc4a"
@@ -3666,6 +3671,13 @@ table@^6.0.9:
     slice-ansi "^4.0.0"
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
+
+tailwindcss-font-inter@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-font-inter/-/tailwindcss-font-inter-3.0.0.tgz#c1ee993cc674c67c3cec54c856f7d39f7f8d1a4d"
+  integrity sha512-6Xjv/+Xt4a8ZDv9chtlnqEFnBTHqBWCMxJqWRZv6A9Sv0ClXRM2qHimoNl7y1p61Z/Bkrp+HYrhRKqALYP8s4g==
+  dependencies:
+    parse-unit "^1.0.1"
 
 tailwindcss@^2.2.14:
   version "2.2.14"
