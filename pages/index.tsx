@@ -54,14 +54,14 @@ const homepage: NextPage = () => (
       </section>
       <section className="flex flex-col items-center justify-center my-20 bg-gray-50">
         <div className="mx-6 mt-8">
-          <span className="text-lg leading-7 font-bold flex flex-col items-center">
+          <span className="text-lg leading-7 font-bold flex flex-col items-center mb-[45px]">
             Barang Terlaris
             <hr className="border-black border-2 w-20 mt-3" />
           </span>
-          <div className="flex flex-wrap justify-center gap-4 my-11">
+          <div className="flex flex-wrap justify-center gap-4 mb-11">
             {[...Array(8)].map((i) => (
               <ProductCard
-                className="w-[232px] h-80"
+                className="w-40 h-60 md:w-[232px] md:h-80"
                 key={i}
               />
             ))}
