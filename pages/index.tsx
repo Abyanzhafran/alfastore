@@ -8,7 +8,7 @@ import ProductCard from 'components/ProductCard';
 
 const homepage: NextPage = () => (
   <MainLayout className="">
-    <header className="relative w-full h-screen flex">
+    <header className="relative w-full h-[567px] flex">
       <img
         src="/alfa.png"
         className="w-full h-full object-cover"
@@ -19,14 +19,14 @@ const homepage: NextPage = () => (
         style={{ background: 'linear-gradient(180deg, rgba(196, 196, 196, 0) 20.51%, rgba(39, 39, 42, 0.7) 64.84%, #171717 100%)' }}
       />
 
-      <div className="absolute bottom-12 left-14 flex flex-col">
+      <div className="absolute bottom-[49px] left-[54.47px] flex flex-col">
         <span className="text-xl leading-7 font-bold z-10 text-white uppercase mb-3">General Supplier</span>
         <hr className="text-white border-2 w-20 mb-4" />
-        <span className="text-base leading-6 font-normal text-white mb-6">
+        <span className="text-base leading-6 font-normal text-white mb-6 max-w-[454px]">
           Melayani berbagai kebutuhan pasokan barang untuk kebutuhan kantor anda maupun kebutuhan lainnya
         </span>
         <div className="flex gap-5 items-center">
-          <button className="bg-white hover:bg-gray-500 px-1.5 py-3 text-sm leading-5 font-medium">
+          <button className="bg-white hover:bg-gray-500 px-3 py-1.5 text-sm leading-5 font-medium">
             Kontak Kami
           </button>
           <button className="text-sm leading-5 font-medium text-white flex">
@@ -35,7 +35,7 @@ const homepage: NextPage = () => (
           </button>
         </div>
       </div>
-      <div className="absolute bottom-12 right-14 flex">
+      <div className="absolute bottom-[47.67px] right-[34.67px] flex">
         <button>
           <ChevronLeftIcon className="w-6 h-6 text-gray-500" />
         </button>
@@ -61,6 +61,7 @@ const homepage: NextPage = () => (
           <div className="flex flex-wrap justify-center gap-4 my-11">
             {[...Array(8)].map((i) => (
               <ProductCard
+                className="w-[232px] h-80"
                 key={i}
               />
             ))}
